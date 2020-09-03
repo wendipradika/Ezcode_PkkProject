@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(left, #1f6f9e, #1b9bd6);
+    justify-content: center;
+    align-items: center;
+    display: flex
+}
+.container{
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 375px;
+    height: 500px;
+    background-color: white;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+.container .kotaklogin{
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100%;
+    margin-left: 3%;
+    margin-top: 8%;
+}
+.container .persegi{
+    width: 100%;
+    height: 130px;
+    background: -webkit-linear-gradient(left, #09cce6, #01ffea);
+}
+.container .persegi .img1{
+    width: 120px;
+    height: 120px;
+    margin-top: 1%   ;
+    margin-left: 125px;
+}
+.container .kotaklogin h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+.container .kotaklogin label{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+.container .kotaklogin label span{
+    text-transform: uppercase;
+}
+.container .kotaklogin input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(219, 219, 219);
+    padding: 2px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.kotaklogin button{
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 36px;
+    display: block;
+    color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.container .kotaklogin .submit{
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(left, #01ffea, #09cce6);
+}
+.kotaklogin .submit:hover{
+    background: -webkit-linear-gradient(left, #09cce6, #01ffea);
+}
+
+.lp{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    color: #465163;
+    
+}
+.lp:hover{
+    color: #28cfbf;
+}
+.p1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #505f75;
+}
+.bb{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    color: #465163;
+}
+.bb:hover{
+    color: #28cfbf;
+}
+.p2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #505f75;
+}
+
+/*========Register Css========*/
+.container2{
+    overflow: hidden;
+    width: 900px;
+    height: 500px;
+    background-color: rgb(24, 190, 255);
+    position: relative;
+    top: 70px;
+    border-radius: 40px;
+    padding: 0;
+    margin: 0;
+}
+.container2 .img2{
+    width: 280px;
+    height: 300px;
+    bottom: 0;
+    left: -2px;
+    position: absolute;
+}
+.persegi2{
+    position: absolute;
+    right: 0;
+    width: 650px;
+    height: 100%;
+    background-color: white;
+}
+.kotakdaftar{
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100%;
+    margin-left: 5%;
+    margin-top: 2%;
+} 
+.container2 .kotakdaftar h2{
+    width: 100%;
+    text-align: center;
+}
+.container2 .kotakdaftar label{
+    display: block;
+}
+.container2 .kotakdaftar label span{
+    font-weight: 600;
+    color: #505f75;
+
+}
+.container2 .kotakdaftar input{
+    display: inline;
+    width: 570px;
+    outline: none;
+    margin-bottom: 20px;
+    background-color: rgb(240, 240, 240);
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+}
+.container2 .kotakdaftar input:focus{
+    box-shadow: aqua;
+}
+.container2 .kotakdaftar button{
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 36px;
+    display: block;
+    color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.container2 .kotakdaftar .submit{
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(left, #01ffea, #09cce6);
+}
+.container2 .kotakdaftar .submit:hover{
+    background: -webkit-linear-gradient(left, #09cce6, #01ffea);
+}
