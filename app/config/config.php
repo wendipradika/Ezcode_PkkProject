@@ -1,2 +1,2 @@
 <?php  
-define('BASEURL','http://localhost/tugaspkk/project_pkk/public');
+define('BASEURL','http://localhost/tugaspkk/Ezcode_PkkProject/public');
