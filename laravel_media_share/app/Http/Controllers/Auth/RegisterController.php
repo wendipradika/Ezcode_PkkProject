@@ -81,4 +81,9 @@ class RegisterController extends Controller
     {
         $this->guard()->logout();
     }
+
+    public function showRegistrationForm()
+    {
+        return view('auth.register-1');
+    }
 }
