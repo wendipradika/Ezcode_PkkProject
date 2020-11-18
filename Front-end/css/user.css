@@ -7,6 +7,11 @@
     width: 100%;
     height: 100%;
     background-color: #2f7cbd;
+    margin: 0;
+}
+.menu{
+    margin: 0;
+    padding: 0;
 }
 .menu a{
     text-decoration: none;
@@ -406,3 +411,97 @@ input#toggle:checked ~ .menu-panel { display: none; }
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
+/*========Data User Css========*/
+
+
+/*.sidebar{
+    width: 250px;
+    float: left;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    margin-top: 65px;
+    float: left;
+    left: 0;
+    transition-property: left;
+}
+.sidebar .text{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: #0b6c79;
+    letter-spacing: 1px;===============*/
+/* } */
+
+nav ul{
+    background:#042e33;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+nav ul li{
+    line-height: 60px;
+    border-bottom: 1px solid rgba(156, 156, 156, 0.1);
+}
+nav ul li a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 30px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+nav ul li a:hover{
+    background-color: #0b6c79;
+    color: white;
+    border-left-color: white;
+}
+nav ul ul{
+    position: static;
+}
+nav ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+nav ul ul li a{
+    font-size: 17px;
+    color: white;
+    padding-left: 70px;
+}
+nav ul li a span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: 0.4s;
+}
+ 
+.content{
+    width: 1080px;
+    margin-left: 150px;
+    margin-top: 25px;
+    height: 100%;
+}
+.content .con1{
+    width: 1060px;
+    padding: 10px;
+    margin-left: 10px;
+    height: 100%;
+    background-color: whitesmoke;
+}
+.box{
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 600%;
+    margin-left: 13%;
+    margin-top: 2%;
+}
+
