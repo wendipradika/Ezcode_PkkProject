@@ -20,6 +20,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/berita', 'HomeController@berita')->name('berita');
-Route::get('/ajukan-pertanyaan', 'HomeController@ajukanPertanyaan')->name('ajukan-pertanyaan')->middleware('auth');
+Route::get('/home', 'homeController@index')->name('home');
+Route::get('/user', 'userController@index');
+Route::get('/user/berita', 'userController@berita')->name('berita');
+Route::get('/user/ajukan-pertanyaan', 'userController@ajukanPertanyaan')->name('ajukan-pertanyaan')->middleware('auth');
+
+
+
+Route::get('/admin', 'adminController@index');

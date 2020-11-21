@@ -21,18 +21,16 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        return view('user.index');
-    }
+    public function index(){
+        if (isset(auth()->user()->level)) {
 
-    public function berita()
-    {
-        return view('user.berita');
-    }
-
-    public function ajukanPertanyaan()
-    {
-        return view('user.ajukan-pertanyaan');
+            if (auth()->user()->level == 'user') {
+                return redirect('/user');
+            } else if (auth()->user()->level == 'admin') {
+                return redirect('/admin');
+            }
+        } else {
+            return view('user.index');
+        }
     }
 }

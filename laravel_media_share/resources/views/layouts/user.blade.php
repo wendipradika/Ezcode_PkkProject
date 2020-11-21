@@ -22,7 +22,7 @@
                     @guest
                         <a href="{{ route('login') }}" class="login-btn">Login</a>
                         @else
-                         <form action="{{ route('logout') }}" method="post">
+                        <form action="{{ route('logout') }}" method="post">
                         @csrf
                         <input type="submit" class="logout-btn" value="Log Out">
                     </form>
@@ -30,7 +30,7 @@
                 </li>
             </ul>
         </div>
-        @yield('konten')
     </div>
+    @yield('konten')
 </body>
 </html>
