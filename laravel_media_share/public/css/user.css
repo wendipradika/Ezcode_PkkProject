@@ -38,6 +38,21 @@
     border-radius: 20px;
     font-weight: bold;
 }
+.login-btn{
+    text-align: center;
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    cursor: pointer;
+    width: 100px;
+    background: transparent;
+    color: white;
+    line-height: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
 .logout-btn span{
     display: block;
     padding: 8px 22px;

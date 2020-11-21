@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-    <link rel="stylesheet" href="{{ asset('css/user.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li class="logo"><img src="{{ asset('image/avatar.png') }}" alt=""></li>
-                <li><a href="">Utama</a></li>
-                <li><a href="">Berita</a></li>
-                <li><a href="">Ajukan Pertanyaan</a></li>
-                <li><a href="">Hubungi</a></li>
-                <li>
-                    <form action="{{ route('logout') }}" method="post">
-                        @csrf
-                        <input type="submit" class="logout-btn" value="Log Out">
-                    </form>
-                </li>
-            </ul>
-        </div>
-        <div class="banner">
-            <div class="app-text">
-                <h1>Selamat Datang <br> di Aplikasi pelayanan publik Kami</h1>
+@extends('layouts.user')
+@section('judul','HOME')
+
+@section('konten')
+
+<div class="banner">
+    <div class="app-text">
+        <h1>Selamat Datang <br> di Aplikasi pelayanan publik Kami</h1>
                 <p>Anda dapat mengetahui berita-berita terupdate tentang pandemi Covid19, <br> dan kami pastikan anda tidak akan tertinggal informasi.</p>
             </div>
             <div class="app-picture">
@@ -63,7 +42,4 @@
                 <p>Anda ingin info lebih lanjut? Klik halaman Hubungi untuk menghubungi petugas kami.<br>.</p>
             </div>
         </div>
-
-    </div>
-</body>
-</html>
+@endsection
