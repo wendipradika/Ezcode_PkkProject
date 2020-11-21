@@ -21,9 +21,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index(){
+    public function index(  ){
         if (isset(auth()->user()->level)) {
-
             if (auth()->user()->level == 'user') {
                 return redirect('/user');
             } else if (auth()->user()->level == 'admin') {

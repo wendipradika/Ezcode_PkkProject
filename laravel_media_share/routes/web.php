@@ -27,4 +27,9 @@ Route::get('/user/ajukan-pertanyaan', 'userController@ajukanPertanyaan')->name('
 
 
 
-Route::get('/admin', 'adminController@index');
+Route::get('/admin', 'adminController@index')->name('dashboard');
+Route::get('/data-covid', 'adminController@dataCovid')->name('data-covid');
+Route::get('/update', 'adminController@update')->name('update');
+Route::get('/data-berita', 'adminController@dataBerita')->name('data-berita');
+Route::get('/tambah-berita', 'adminController@tambahBerita')->name('tambah-berita');
+Route::get('/user', 'adminController@user')->name('user');

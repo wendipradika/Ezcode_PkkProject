@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>@yield('judul')</title>
     <link rel="stylesheet" href="../css/admin.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,47 +19,30 @@
 
     <nav class="sidebar">
         <ul>
-            <li><a style="text-decoration: none;" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a style="text-decoration: none;" href="{{ route('dashboard') }}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li>
-                <a style="text-decoration: none;" class="cov-btn" href="#"> Covid-19 <span class="fa fa-caret-down first"></span></a>
+                <a style="text-decoration: none;" class="cov-btn" href=""> Covid-19 <span class="fa fa-caret-down first"></span></a>
                 <ul class="cov-show">
-                    <li><a style="text-decoration: none;" href="datacovid.html"><i class="fa fa-medkit" aria-hidden="true"></i> Data Covid</a></li>
-                    <li><a style="text-decoration: none;" href="updatecov.html"><i class="fa fa-edit"></i> Update Data</a></li>
+                    <li><a style="text-decoration: none;" href="{{ route('data-covid') }}"><i class="fa fa-medkit" aria-hidden="true"></i> Data Covid</a></li>
+                    <li><a style="text-decoration: none;" href="{{ route('update') }}"><i class="fa fa-edit"></i> Update Data</a></li>
                 </ul>
             </li>
             <li>
                 <a style="text-decoration: none;" class="ber-btn" href="">Berita <span class="fa fa-caret-down second"></span></a>
                 <ul class="ber-show">
-                    <li><a style="text-decoration: none;" href="databerita.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Data Berita</a></li>
-                    <li><a style="text-decoration: none;" href="tambahberita.html"><i class="fa fa-plus-circle" aria-hidden="true"></i> Tambah Berita</a></li>
+                    <li><a style="text-decoration: none;" href="{{ route('data-berita') }}"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Data Berita</a></li>
+                    <li><a style="text-decoration: none;" href="{{ route('tambah-berita') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Tambah Berita</a></li>
                 </ul>
             </li>
-            <li><a style="text-decoration: none;" href="user.html"><i class="fa fa-address-book" aria-hidden="true"></i> User</a></li>
+            <li><a style="text-decoration: none;" href=""{{ route('user') }}><i class="fa fa-address-book" aria-hidden="true"></i> User</a></li>
         </ul>
     </nav>
 </div>
 
 <div class="content">
-    <h4>Halaman Detail</h4>
-        <div class="con1">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Detail Berita</h5>
-                    <div class="card mb-3">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                      </div>
-                </div>
-            </div>
-    </div>
+    @yield('konten')
 </div>
 
-</body>
-</html>
 
 <script type="text/javascript">
     $('cov-btn').click(function(){
@@ -69,3 +53,5 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
