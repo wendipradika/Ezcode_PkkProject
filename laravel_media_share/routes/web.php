@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('auth.login-1');
+    return view('user.index');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/berita', 'HomeController@berita')->name('berita');
+Route::get('/ajukan-pertanyaan', 'HomeController@ajukanPertanyaan')->name('ajukan-pertanyaan')->middleware('auth');

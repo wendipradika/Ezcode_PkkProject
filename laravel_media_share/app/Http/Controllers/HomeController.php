@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('user.index');
     }
+
+    public function berita()
+    {
+        return view('user.berita');
+    }
+
+    public function ajukanPertanyaan()
+    {
+        return view('user.ajukan-pertanyaan');
+    }
 }
