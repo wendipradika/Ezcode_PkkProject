@@ -14,7 +14,11 @@
 <div class="wrap">
     <div class="navbar">
             <h4>Admin Page</h4>
-            <a style="text-decoration: none;" href=""><i class="fa fa-arrow-circle-left"></i> Log Out</a>
+            <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <i class="fa fa-arrow-circle-left"></i>
+                <input type="submit" class="logout-btn" value="Log Out">
+            </form>
     </div>
 
     <nav class="sidebar">

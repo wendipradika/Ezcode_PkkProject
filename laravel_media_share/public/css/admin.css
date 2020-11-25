@@ -92,7 +92,14 @@ nav ul li a span{
     margin-right: 20px;
     right: 0;
 }
-.navbar a:hover{
+.navbar form input{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+   background-color: transparent;
+   border: none;
+}
+.navbar form input:hover{
     color: grey;
 }
 .navbar h4{

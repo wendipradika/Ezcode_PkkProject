@@ -18,7 +18,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Terkonfirmasi Positif</h5>
-                              <p class="card-text"><i class="fa fa-user"></i> 55.6 Juta</p>
+                              <p class="card-text"><i class="fa fa-user"></i>{{ $kasusGlobal['positif'] }}</p>
                             </div>
                           </div>
                         </div>
@@ -26,7 +26,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Dalam Perawatan</h5>
-                              <p class="card-text"><i class="fa fa-medkit"></i> 22.5 Juta</p>
+                              <p class="card-text"><i class="fa fa-medkit"></i> {{ $kasusGlobal['positif']- $kasusGlobal['meninggal']-$kasusGlobal['diobati'] }}</p>
                             </div>
                           </div>
                         </div>
@@ -34,7 +34,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Berhasil di obati</h5>
-                              <p class="card-text"><i class="fa fa-plus"></i> 35.8 Juta</p>
+                              <p class="card-text"><i class="fa fa-plus"></i> {{ $kasusGlobal['diobati'] }}</p>
                             </div>
                           </div>
                         </div>
@@ -42,7 +42,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Meninggal Dunia</h5>
-                              <p class="card-text"><i class="fa fa-xing-square"></i> 1.34 Juta</p>
+                              <p class="card-text"><i class="fa fa-xing-square"></i>{{ $kasusGlobal['meninggal'] }}</p>
                             </div>
                           </div>
                         </div>
@@ -53,7 +53,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Terkonfirmasi Positif</h5>
-                              <p class="card-text"><i class="fa fa-user"></i> 474 Ribu</p>
+                              <p class="card-text"><i class="fa fa-user"></i> {{ $kasusIndonesia['positif'] }}</p>
                             </div>
                           </div>
                         </div>
@@ -61,7 +61,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Dalam Perawatan</h5>
-                              <p class="card-text"><i class="fa fa-medkit"></i> 60.426</p>
+                              <p class="card-text"><i class="fa fa-medkit"></i>{{ $kasusIndonesia['positif']- $kasusIndonesia['meninggal']-$kasusIndonesia['diobati'] }}</p>
                             </div>
                           </div>
                         </div>
@@ -69,7 +69,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Berhasil di obati</h5>
-                              <p class="card-text"><i class="fa fa-plus"></i> 399 Ribu</p>
+                              <p class="card-text"><i class="fa fa-plus"></i> {{ $kasusIndonesia['diobati'] }}</p>
                             </div>
                           </div>
                         </div>
@@ -77,7 +77,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Meninggal Dunia</h5>
-                              <p class="card-text"><i class="fa fa-xing-square"></i> 15.393</p>
+                              <p class="card-text"><i class="fa fa-xing-square"></i> {{ $kasusIndonesia['meninggal'] }}</p>
                             </div>
                           </div>
                         </div>

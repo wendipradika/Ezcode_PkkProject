@@ -12,7 +12,7 @@
             <div class="card-body">
                 <h5 class="card-title">Periksa kasus Covid-19</h5>
                 <p class="card-text">dengan menuju link di bawah anda akan di bawa ke halaman data</p>
-                <a href="datacovid.html" class="btn btn-primary">Kunjungi</a>
+                <a href="{{ route('data-covid') }}" class="btn btn-primary">Kunjungi</a>
             </div>
         </div>
 
@@ -23,7 +23,7 @@
             <div class="card-body">
                 <h5 class="card-title">Periksa berita tentang Covid-19</h5>
                 <p class="card-text">dengan menuju link di bawah anda akan di bawa ke halaman berita</p>
-                <a href="databerita.html" class="btn btn-primary">Kunjungi</a>
+                <a href="{{ route('data-berita') }}" class="btn btn-primary">Kunjungi</a>
             </div>
         </div>
     </div>
