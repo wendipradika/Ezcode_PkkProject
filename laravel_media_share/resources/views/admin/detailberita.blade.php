@@ -9,11 +9,11 @@
                 <div class="card-body">
                     <h5 class="card-title">Detail Berita</h5>
                     <div class="card mb-3">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img style="width: 500px" src="/storage/image/{{ $berita['gambar'] }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          <h5 class="card-title">{{ $berita['judul'] }}</h5>
+                          <p class="card-text">{{ $berita['deskripsi'] }}</p>
+                          {{-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> --}}
                         </div>
                       </div>
                 </div>

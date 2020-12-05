@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\berita;
 use App\kasusGlobal;
 use App\kasusIndonesia;
 use Illuminate\Http\Request;
@@ -22,7 +24,8 @@ class userController extends Controller
     {
         $kasusGlobal = kasusGlobal::first();
         $kasusIndonesia = kasusIndonesia::first();
-        return view('user.berita',compact('kasusGlobal','kasusIndonesia'));
+        $berita = berita::get();
+        return view('user.berita',compact('kasusGlobal','kasusIndonesia','berita'));
     }
 
     public function ajukanPertanyaan()

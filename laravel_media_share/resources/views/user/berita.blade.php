@@ -91,28 +91,20 @@
 <div class="content">
 	<!--<div class="box">-->
     <h4>Berita Terkini</h4>
-        <div class="con1">
+    @foreach ($berita as $brt)
+    <div class="row">
+        <div class="col-sm-5 m-1">
             <div class="card">
+                <img style="" src="/storage/image/{{ $brt['gambar'] }}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Data Berita</h5>
-                    <table class="table" style="text-align: center;">
-                        <thead class="thead-light">
-                            <th>NO</th>
-                            <th>Gambar</th>
-                            <th>Judul</th>
-                            <th>Aksi</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Image 1</td>
-                                <td>Judul 1</td>
-                                <td><a href="updateberita.html" class="btn btn-info"><i class="fa fa-edit"></i></a><a href="detailberita.html" class="btn btn-success"><i class="fa fa-eye"></i></a><button class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <h5 class="card-title">{{ $brt['judul'] }}</h5>
+                    <p class="card-text">{{ $brt['deskripsi'] }}</p>
+                    <p class="card-text"><a href="user/detail/berita/{{ $brt['id'] }}" class="btn btn-primary">detail</a></p>
+                </div>
             </div>
+        </div>
     </div>
+    @endforeach
 </div>
 
 @endsection

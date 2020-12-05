@@ -7,17 +7,18 @@
         <div class="con1">
             <div class="card">
                 <div class="card-body">
-                    <form>
+                    <form action="{{ route('upload-berita') }}" method="post" enctype="multipart/form-data">
+                        @csrf
                         <div class="form-group">
                           <label for="exampleInputEmail1">Judul</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <input type="text" name="judul" class="form-control" id="exampleInputEmail1" >
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Deskripsi</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            <textarea class="form-control" name="deskripsi" id="exampleFormControlTextarea1" rows="5"></textarea>
                           </div>
                           <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="customFile">
+                            <input type="file"  name="gambar" class="custom-file-input" id="customFile">
                             <label class="custom-file-label" for="customFile">Gambar</label>
                           </div>
                         <button type="submit" class="btn btn-primary mt-4">Tambah</button>

@@ -16,12 +16,25 @@
                             <th>Aksi</th>
                         </thead>
                         <tbody>
+                            @foreach ($berita as $brt )
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Image 1</td>
-                                <td>Judul 1</td>
-                                <td><a href="updateberita.html" class="btn btn-info"><i class="fa fa-edit"></i></a><a href="detailberita.html" class="btn btn-success"><i class="fa fa-eye"></i></a><button class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+                                <th scope="row">{{ $loop->iteration }}</th>
+                                <td>
+                                    <img style="width:100px" src="storage/image/{{ $brt['gambar'] }}" alt="">
+                                    </td>
+                                <td>{{ $brt['judul'] }}</td>
+                                <td><a href="/edit/berita/{{ $brt['id'] }}" class="btn btn-info"><i class="fa fa-edit"></i></a>
+                                    <a href="/detail/berita/{{ $brt['id'] }}" class="btn btn-success"><i class="fa fa-eye"></i></a>
+                                    <form action="/berita/{{$brt->id}}" method="post" class="d-inline">
+                                        @method('delete')
+                                        @csrf
+                                        <input type="hidden" name="gambar" value="{{ $brt['gambar'] }}">
+                                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"> </i></button>
+                                    </form>
+                                </td>
                             </tr>
+                            @endforeach
+
                         </tbody>
                     </table>
             </div>

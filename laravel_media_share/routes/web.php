@@ -35,3 +35,8 @@ Route::get('/tambah-berita', 'adminController@tambahBerita')->name('tambah-berit
 Route::get('/user', 'adminController@user')->name('user');
 Route::patch('/updateCov-global', 'adminController@updateCovGlobal')->name('updateCovGlobal');
 Route::patch('/updateCov-indonesia', 'adminController@updateCovIndonesia')->name('updateCovIndonesia');
+Route::post('/upload-berita', 'adminController@uploadBerita')->name('upload-berita');
+Route::delete('/berita/{id}', 'adminController@deleteBerita');
+Route::get('/edit/berita/{id}', 'adminController@editBerita');
+Route::get('/detail/berita/{id}', 'adminController@detailBerita');
+Route::patch('/edit/berita', 'adminController@updateBerita');
