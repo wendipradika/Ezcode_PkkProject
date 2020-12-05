@@ -27,7 +27,29 @@ class adminController extends Controller
     }
 
     public function update(){
-        return view('admin.updatecov');
+        $kasusGlobal = kasusGlobal::first();
+        $kasusIndonesia = kasusIndonesia::first();
+        return view('admin.updatecov',compact('kasusGlobal','kasusIndonesia'));
+    }
+
+    public function updateCovGlobal(Request $request){
+        kasusGlobal::whereId(1)->update([
+            'positif' =>$request['positif'],
+            'diobati' =>$request['diobati'],
+            'meninggal' =>$request['meninggal']
+        ]);
+
+        return redirect('/update');
+    }
+
+    public function updateCovIndonesia(Request $request){
+        kasusIndonesia::whereId(1)->update([
+            'positif' =>$request['positif'],
+            'diobati' =>$request['diobati'],
+            'meninggal' =>$request['meninggal']
+        ]);
+
+        return redirect('/update');
     }
 
     public function dataBerita(){

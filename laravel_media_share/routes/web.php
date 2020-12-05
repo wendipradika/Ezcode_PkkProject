@@ -33,3 +33,5 @@ Route::get('/update', 'adminController@update')->name('update');
 Route::get('/data-berita', 'adminController@dataBerita')->name('data-berita');
 Route::get('/tambah-berita', 'adminController@tambahBerita')->name('tambah-berita');
 Route::get('/user', 'adminController@user')->name('user');
+Route::patch('/updateCov-global', 'adminController@updateCovGlobal')->name('updateCovGlobal');
+Route::patch('/updateCov-indonesia', 'adminController@updateCovIndonesia')->name('updateCovIndonesia');
