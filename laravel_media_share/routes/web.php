@@ -23,6 +23,7 @@ Auth::routes();
 Route::get('/home', 'homeController@index')->name('home');
 Route::get('/user', 'userController@index');
 Route::get('/user/berita', 'userController@berita')->name('berita');
+Route::get('/user/detail/berita/{id}', 'userController@detailBerita');
 Route::get('/user/ajukan-pertanyaan', 'userController@ajukanPertanyaan')->name('ajukan-pertanyaan')->middleware('auth');
 
 

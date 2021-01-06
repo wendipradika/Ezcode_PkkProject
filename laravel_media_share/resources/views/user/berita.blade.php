@@ -99,7 +99,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $brt['judul'] }}</h5>
                     <p class="card-text">{{ $brt['deskripsi'] }}</p>
-                    <p class="card-text"><a href="user/detail/berita/{{ $brt['id'] }}" class="btn btn-primary">detail</a></p>
+                    <p class="card-text"><a href="/user/detail/berita/{{ $brt['id'] }}" class="btn btn-primary">detail</a></p>
                 </div>
             </div>
         </div>

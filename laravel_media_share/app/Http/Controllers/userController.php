@@ -27,6 +27,12 @@ class userController extends Controller
         $berita = berita::get();
         return view('user.berita',compact('kasusGlobal','kasusIndonesia','berita'));
     }
+    public function detailBerita($id)
+    {
+
+        $berita = berita::whereId($id)->first();
+        return view('user.detail-berita',compact('berita'));
+    }
 
     public function ajukanPertanyaan()
     {
